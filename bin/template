@@ -68,7 +68,7 @@ function error(message, exit) {
   }
 
   if (!$1) {
-    error('template: unrecognized option \'' + $0 + '\'', 0);
+    error('template: output name required: \'template ' + $0 + ' [NAME]\'');
     printUsage();
   }
 
