@@ -1,0 +1,9 @@
+{
+  "c": "c",
+  "cc|cpp": "cc",
+  "java": "java",
+  "html": "html",
+  "html-canvas": "html-canvas",
+  "js": "js",
+  "go": "go"
+}
