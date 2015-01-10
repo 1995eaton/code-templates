@@ -3,7 +3,7 @@
   <description></description>
 
   <property name="ant.project.name" value="project"/>
-  <property name="main_class_name" value="Main"/>
+  <property name="main_class_name" value="__$1"/>
   <property name="jarname"  value="${ant.project.name}"/>
   <property name="build.sysclasspath" value="last"/>
 

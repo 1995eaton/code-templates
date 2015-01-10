@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "__$1",
+  "version": "1.0.0",
+  "description": "",
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "history",
+    "bookmarks",
+    "storage",
+    "sessions",
+    "downloads",
+    "topSites",
+    "downloads.shelf",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "background": {
+    "persistant": false,
+    "scripts": [
+      "background_scripts/port_actions.js",
+      "background_scripts/runtime_actions.js",
+      "background_scripts/background.js",
+      "utils.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content_scripts/message_handler.js",
+        "content_scripts/messenger.js",
+        "utils.js",
+        "content_scripts/content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}

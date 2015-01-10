@@ -67,6 +67,10 @@ function error(message, exit) {
     return 0;
   }
 
+  if ($0 === '-h' || $0 === '--help') {
+    printUsage();
+  } 
+
   if (!$1) {
     error('template: output name required: \'template ' + $0 + ' [NAME]\'');
     printUsage();
