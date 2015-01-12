@@ -1,17 +1,19 @@
-OUTFILE=release
+CLASS=class
+APP=application
+MAIN=Main
 
-all: project
+all: compile bundle
 
-run: project
-	./$(OUTFILE)
+run: compile
+	java -cp $(CLASS) $(MAIN)
 
-project:
-	ant
-	echo -e '#!/bin/sh\njava -jar *.jar' > $(OUTFILE)
-	chmod +x $(OUTFILE)
+bundle:
+	jar cfe $(APP).jar $(MAIN) -C $(CLASS) .
+
+compile:
+	mkdir -p $(CLASS)
+	rm -f $(CLASS)/*
+	javac -d $(CLASS) src/*.java
 
 clean:
-	ant clean
 	rm -f *.jar
-	rm -rf ./dist
-	rm -f $(OUTFILE)

@@ -2,6 +2,7 @@
   "c": "c",
   "cc|cpp": "cc",
   "java": "java",
+  "java-ant": "java-ant",
   "javaclass": "javaclass",
   "html": "html",
   "html-canvas": "html-canvas",
