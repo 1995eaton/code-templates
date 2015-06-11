@@ -1,6 +1,8 @@
 {
   "c": "c",
+  "c-project": "c-project",
   "cc|cpp": "cc",
+  "cc-project|cpp-project": "cc-project",
   "java": "java",
   "java-ant": "java-ant",
   "javaclass": "javaclass",
