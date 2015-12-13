@@ -1,5 +1,4 @@
-#include <log>
-#include <vector>
+#include <iostream>
 
 int main() {
 

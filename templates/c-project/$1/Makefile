@@ -1,7 +1,7 @@
 CC = gcc
 
-CFLAGS += -std=gnu99 -Wall -Wextra -O2
-LIBS = -lX11 -lpthread
+CFLAGS += -std=c11 -Wall -Wextra -O2
+LIBS =
 LDFLAGS += -s
 
 PREFIX ?= /usr/local
